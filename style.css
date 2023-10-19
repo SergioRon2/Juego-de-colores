@@ -1,0 +1,96 @@
+@keyframes animacion1 {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+
+
+body{
+    padding: 10px;
+    margin: 10px;
+    background-color: #222;
+    min-height: 100vh;
+}
+.flex-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cuadros{
+    gap: 20px;    
+    display: flex;
+    flex-wrap: wrap;
+}
+.square1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.square2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.square3{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.square4{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+
+.square1:hover{
+    box-shadow: 0px 1px 10px 10px #ff0000aa;
+}
+.square2:hover{
+    box-shadow: 0px 1px 10px 10px #0000ffaa;
+}
+.square3:hover{
+    box-shadow: 0px 1px 10px 10px #ffff00aa;
+}
+.square4:hover{
+    box-shadow: 0px 1px 10px 10px #008000aa;
+}
+
+
+.boton > button{
+    margin-top: 50px;
+    margin: none;
+    width: 8vw;
+    height: 5vh;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2ex;
+}
+.boton > button:hover{
+    box-shadow: 0px 1px 10px 5px #111;
+    transition: all .2s ease;
+    background-color: #aaa;
+}
